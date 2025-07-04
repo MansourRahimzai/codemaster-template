@@ -5,7 +5,7 @@ CodeMaster - Online Course Template
 📦 Version: 1.0  
 🧑‍💻 Author: Mansour  
 📅 Release Date: July 2025  
-🌐 Live Preview: [YOUR_DEMO_LINK_HERE]
+🌐 Live Preview: [https://mansourrahimzai.github.io/codemaster-template/]
 
 -------------------------------
 📁 Files Included
