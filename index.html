@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Code Master</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="bg-white shadow fixed top-0 left-0 right-0 z-50">
+      <div
+        class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center"
+      >
+        <!-- Logo -->
+        <a href="#" class="text-2xl font-bold text-indigo-600">CodeMaster</a>
+
+        <!-- Desktop Menu -->
+        <nav class="hidden md:flex space-x-6 font-medium">
+          <a href="#learn" class="hover:text-indigo-600 transition">Learn</a>
+          <a href="#curriculum" class="hover:text-indigo-600 transition"
+            >Curriculum</a
+          >
+          <a href="#instructor" class="hover:text-indigo-600 transition"
+            >Instructor</a
+          >
+          <a href="#pricing" class="hover:text-indigo-600 transition"
+            >Pricing</a
+          >
+          <a href="#faq" class="hover:text-indigo-600 transition">FAQ</a>
+        </nav>
+
+        <!-- Mobile Menu Button -->
+        <button
+          id="menu-btn"
+          class="md:hidden text-gray-700 focus:outline-none"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-6 h-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div
+        id="menu"
+        class="hidden md:hidden bg-white px-6 pb-4 space-y-2 font-medium"
+      >
+        <a href="#learn" class="block hover:text-indigo-600">Learn</a>
+        <a href="#curriculum" class="block hover:text-indigo-600">Curriculum</a>
+        <a href="#instructor" class="block hover:text-indigo-600">Instructor</a>
+        <a href="#pricing" class="block hover:text-indigo-600">Pricing</a>
+        <a href="#faq" class="block hover:text-indigo-600">FAQ</a>
+      </div>
+    </header>
+
+    <section
+      class="bg-gradient-to-br from-indigo-600 to-purple-700 text-white py-20 px-6 md:px-16"
+    >
+      <div
+        class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between"
+      >
+        <!-- Text Section -->
+        <div
+          data-aos="fade-up"
+          data-aos-delay="200"
+          data-aos-duration="1000"
+          class="md:w-1/2 space-y-6"
+        >
+          <h1 class="text-4xl md:text-5xl font-bold leading-tight">
+            Learn Web Development From Zero to Hired 💻
+          </h1>
+          <p class="text-lg text-gray-100">
+            A complete course to become a front-end developer in just 8 weeks.
+            No prior experience required!
+          </p>
+          <a
+            href="#pricing"
+            class="inline-block bg-yellow-400 text-black font-semibold px-6 py-3 rounded shadow hover:bg-yellow-300 transition"
+          >
+            Enroll Now
+          </a>
+        </div>
+
+        <!-- Image or Video -->
+        <div class="md:w-1/2 mt-10 md:mt-0">
+          <img
+            src="imgs/1705670025336-removebg-preview.png"
+            alt="Hero Image"
+            class="rounded-lg"
+            data-aos="fade-up"
+            data-aos-delay="200"
+            data-aos-duration="1000"
+            class="md:w-1/2 space-y-6"
+          />
+
+          <!-- Or replace with video -->
+          <!-- <video controls class="rounded-lg shadow-lg"><source src="video.mp4" type="video/mp4"></video> -->
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-white py-20 px-6 md:px-16">
+      <div class="max-w-6xl mx-auto text-center">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+          What You'll Learn
+        </h2>
+        <p class="text-gray-600 mb-12 text-lg">
+          By the end of this course, you'll master the essential front-end
+          skills needed to build real-world web apps.
+        </p>
+
+        <!-- Skills Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+          <!-- Skill Card 1 -->
+          <div
+            class="bg-gray-100 p-6 rounded-lg shadow hover:shadow-lg transition"
+            data-aos="zoom-in"
+          >
+            <div class="text-4xl mb-4">💻</div>
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">
+              HTML, CSS & JavaScript
+            </h3>
+            <p class="text-gray-600">
+              Build responsive layouts and add interactivity to your websites
+              from scratch.
+            </p>
+          </div>
+
+          <!-- Skill Card 2 -->
+          <div
+            class="bg-gray-100 p-6 rounded-lg shadow hover:shadow-lg transition"
+            data-aos="zoom-in"
+          >
+            <div class="text-4xl mb-4">⚙️</div>
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">
+              Git & GitHub
+            </h3>
+            <p class="text-gray-600">
+              Learn how to manage code using Git and collaborate on projects
+              using GitHub.
+            </p>
+          </div>
+
+          <!-- Skill Card 3 -->
+          <div
+            class="bg-gray-100 p-6 rounded-lg shadow hover:shadow-lg transition"
+            data-aos="zoom-in"
+          >
+            <div class="text-4xl mb-4">🧠</div>
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">
+              Problem Solving
+            </h3>
+            <p class="text-gray-600">
+              Think like a developer and solve real-world problems with clean
+              code.
+            </p>
+          </div>
+
+          <!-- Skill Card 4 -->
+          <div
+            class="bg-gray-100 p-6 rounded-lg shadow hover:shadow-lg transition"
+            data-aos="zoom-in"
+          >
+            <div class="text-4xl mb-4">🌐</div>
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">
+              Responsive Design
+            </h3>
+            <p class="text-gray-600">
+              Make your websites look perfect on mobile, tablet, and desktop
+              screens.
+            </p>
+          </div>
+
+          <!-- Skill Card 5 -->
+          <div
+            class="bg-gray-100 p-6 rounded-lg shadow hover:shadow-lg transition"
+            data-aos="zoom-in"
+          >
+            <div class="text-4xl mb-4">⚡</div>
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">
+              TailwindCSS
+            </h3>
+            <p class="text-gray-600">
+              Style faster and cleaner using the most popular utility-first CSS
+              framework.
+            </p>
+          </div>
+
+          <!-- Skill Card 6 -->
+          <div
+            class="bg-gray-100 p-6 rounded-lg shadow hover:shadow-lg transition"
+            data-aos="zoom-in"
+          >
+            <div class="text-4xl mb-4">🚀</div>
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">
+              Deploy Projects
+            </h3>
+            <p class="text-gray-600">
+              Publish your websites online using tools like GitHub Pages, Vercel
+              or Netlify.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-gray-50 py-20 px-6 md:px-16">
+      <div class="max-w-4xl mx-auto">
+        <h2
+          class="text-3xl md:text-4xl font-bold text-gray-800 mb-6 text-center"
+        >
+          Course Curriculum
+        </h2>
+        <p class="text-gray-600 text-center mb-12 text-lg">
+          Here's a breakdown of everything you'll learn inside this course.
+        </p>
+
+        <!-- Course List -->
+        <div class="space-y-6">
+          <!-- Lesson 1 -->
+          <div
+            class="bg-white p-6 rounded-lg shadow hover:shadow-md transition"
+            data-aos="fade-right"
+          >
+            <h3 class="text-xl font-semibold text-indigo-700 mb-2">
+              Module 1: Web Basics
+            </h3>
+            <p class="text-gray-600">
+              Learn how the web works, basic HTML structure, and setting up your
+              dev tools.
+            </p>
+          </div>
+
+          <!-- Lesson 2 -->
+          <div
+            class="bg-white p-6 rounded-lg shadow hover:shadow-md transition"
+            data-aos="fade-right"
+          >
+            <h3 class="text-xl font-semibold text-indigo-700 mb-2">
+              Module 2: Styling with CSS & Tailwind
+            </h3>
+            <p class="text-gray-600">
+              Understand layout, typography, and build beautiful pages with
+              TailwindCSS.
+            </p>
+          </div>
+
+          <!-- Lesson 3 -->
+          <div
+            class="bg-white p-6 rounded-lg shadow hover:shadow-md transition"
+            data-aos="fade-right"
+          >
+            <h3 class="text-xl font-semibold text-indigo-700 mb-2">
+              Module 3: JavaScript Essentials
+            </h3>
+            <p class="text-gray-600">
+              Master JS fundamentals: variables, functions, DOM manipulation,
+              and events.
+            </p>
+          </div>
+
+          <!-- Lesson 4 -->
+          <div
+            class="bg-white p-6 rounded-lg shadow hover:shadow-md transition"
+            data-aos="fade-right"
+          >
+            <h3 class="text-xl font-semibold text-indigo-700 mb-2">
+              Module 4: Projects & Deployment
+            </h3>
+            <p class="text-gray-600">
+              Build real-world projects and learn how to publish them online
+              with Netlify.
+            </p>
+          </div>
+        </div>
+
+        <!-- PDF Syllabus Download -->
+        <div class="text-center mt-10">
+          <a
+            href="#"
+            class="inline-block bg-indigo-600 text-white px-6 py-3 rounded font-medium hover:bg-indigo-500 transition"
+          >
+            Download Full Syllabus (PDF)
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-white py-20 px-6 md:px-16">
+      <div data-aos="zoom-in-up" class="max-w-5xl mx-auto text-center">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
+          Meet Your Instructor
+        </h2>
+
+        <p class="text-gray-600 mb-12 text-lg">
+          Learn from an experienced developer who's helped over 10,000 students
+          launch their tech careers.
+        </p>
+
+        <!-- Instructor Card -->
+        <div
+          class="flex flex-col md:flex-row items-center md:items-start gap-10 md:gap-16"
+        >
+          <!-- Instructor Image -->
+          <div class="md:w-1/3">
+            <img
+              src="imgs/JohnDoe_img.jpg"
+              class="rounded-full shadow-lg w-64 h-64 object-cover mx-auto"
+            />
+          </div>
+
+          <!-- Instructor Bio -->
+          <div class="md:w-2/3 text-left space-y-4">
+            <h3 class="text-2xl font-semibold text-indigo-700">John Doe</h3>
+            <p class="text-gray-700">
+              Hi, I’m John — a senior front-end developer with over 8 years of
+              experience in the tech industry. I’ve worked with startups and
+              Fortune 500 companies, and I’m here to help you level up your
+              skills and land your dream job.
+            </p>
+            <p class="text-gray-600">
+              In this course, I’ll take you from the absolute basics to building
+              real-world websites that get noticed by employers.
+            </p>
+
+            <!-- Social Links -->
+            <div class="flex items-center gap-4 mt-4">
+              <a
+                href="https://linkedin.com"
+                target="_blank"
+                class="text-indigo-600 hover:underline"
+                >LinkedIn</a
+              >
+              <a
+                href="https://twitter.com"
+                target="_blank"
+                class="text-indigo-600 hover:underline"
+                >Twitter</a
+              >
+              <a
+                href="mailto:instructor@example.com"
+                class="text-indigo-600 hover:underline"
+                >Email</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-gray-100 py-20 px-6 md:px-16">
+      <div data-aos="fade-left" class="max-w-6xl mx-auto text-center">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-12">
+          What Our Students Say
+        </h2>
+
+        <div class="grid gap-10 md:grid-cols-3">
+          <!-- Testimonial 1 -->
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <p class="text-gray-700 mb-6 italic">
+              "This course changed my life! The lessons were clear and easy to
+              follow. I landed my first front-end developer job within 2
+              months!"
+            </p>
+            <div class="flex items-center gap-4">
+              <img
+                src="https://randomuser.me/api/portraits/women/68.jpg"
+                alt="Student 1"
+                class="w-12 h-12 rounded-full object-cover"
+              />
+              <div class="text-left">
+                <h4 class="font-semibold text-indigo-700">Sara Johnson</h4>
+                <p class="text-gray-600 text-sm">Front-End Developer</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <p class="text-gray-700 mb-6 italic">
+              "A perfect course for beginners. The instructor's support was
+              amazing and the projects helped me build confidence."
+            </p>
+            <div class="flex items-center gap-4">
+              <img
+                src="https://randomuser.me/api/portraits/men/75.jpg"
+                alt="Student 2"
+                class="w-12 h-12 rounded-full object-cover"
+              />
+              <div class="text-left">
+                <h4 class="font-semibold text-indigo-700">Michael Lee</h4>
+                <p class="text-gray-600 text-sm">Junior Developer</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <p class="text-gray-700 mb-6 italic">
+              "I highly recommend this course to anyone who wants to start a
+              career in web development. The content is updated and practical."
+            </p>
+            <div class="flex items-center gap-4">
+              <img
+                src="https://randomuser.me/api/portraits/women/45.jpg"
+                alt="Student 3"
+                class="w-12 h-12 rounded-full object-cover"
+              />
+              <div class="text-left">
+                <h4 class="font-semibold text-indigo-700">Emily Carter</h4>
+                <p class="text-gray-600 text-sm">Software Engineer</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing" class="bg-white py-20 px-6 md:px-16">
+      <div data-aos="fade-up" class="max-w-6xl mx-auto text-center">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-12">
+          Choose Your Plan
+        </h2>
+
+        <div class="grid gap-10 md:grid-cols-3">
+          <!-- Basic Plan -->
+          <div
+            class="border border-gray-300 rounded-lg p-8 hover:shadow-lg transition"
+          >
+            <h3 class="text-xl font-semibold mb-4 text-indigo-700">Basic</h3>
+            <p class="text-4xl font-bold mb-6">
+              $99 <span class="text-lg font-normal">/ 8 weeks</span>
+            </p>
+            <ul class="mb-8 text-gray-600 text-left space-y-3">
+              <li>Access to all course videos</li>
+              <li>Community support</li>
+              <li>Downloadable resources</li>
+            </ul>
+            <a
+              href="#"
+              class="inline-block bg-indigo-700 text-white font-semibold px-6 py-3 rounded hover:bg-indigo-600 transition"
+            >
+              Enroll Now
+            </a>
+          </div>
+
+          <!-- Pro Plan (Highlighted) -->
+          <div
+            class="border border-indigo-700 rounded-lg p-8 bg-indigo-50 shadow-lg"
+          >
+            <h3 class="text-xl font-semibold mb-4 text-indigo-900">Pro</h3>
+            <p class="text-5xl font-bold mb-6 text-indigo-900">
+              $199 <span class="text-lg font-normal">/ 8 weeks</span>
+            </p>
+            <ul class="mb-8 text-indigo-800 text-left space-y-3">
+              <li>Everything in Basic</li>
+              <li>1-on-1 Mentoring</li>
+              <li>Exclusive projects</li>
+              <li>Certificate of Completion</li>
+            </ul>
+            <a
+              href="#"
+              class="inline-block bg-indigo-900 text-white font-semibold px-6 py-3 rounded hover:bg-indigo-800 transition"
+            >
+              Get Started
+            </a>
+          </div>
+
+          <!-- Premium Plan -->
+          <div
+            class="border border-gray-300 rounded-lg p-8 hover:shadow-lg transition"
+          >
+            <h3 class="text-xl font-semibold mb-4 text-indigo-700">Premium</h3>
+            <p class="text-4xl font-bold mb-6">
+              $299 <span class="text-lg font-normal">/ 8 weeks</span>
+            </p>
+            <ul class="mb-8 text-gray-600 text-left space-y-3">
+              <li>Everything in Pro</li>
+              <li>Job placement assistance</li>
+              <li>Lifetime access to content</li>
+              <li>Priority support</li>
+            </ul>
+            <a
+              href="#"
+              class="inline-block bg-indigo-700 text-white font-semibold px-6 py-3 rounded hover:bg-indigo-600 transition"
+            >
+              Join Now
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-gray-50 py-20 px-6 md:px-16">
+      <div data-aos="fade-right" class="max-w-4xl mx-auto">
+        <h2
+          class="text-3xl md:text-4xl font-bold text-gray-800 text-center mb-12"
+        >
+          Frequently Asked Questions
+        </h2>
+
+        <div class="space-y-4" x-data="{ openFaq: null }">
+          <!-- FAQ Item 1 -->
+          <div class="bg-white rounded-lg shadow">
+            <button
+              @click="openFaq === 1 ? openFaq = null : openFaq = 1"
+              class="w-full text-left px-6 py-4 flex justify-between items-center"
+            >
+              <span class="text-indigo-700 font-semibold"
+                >Do I need any prior experience to take this course?</span
+              >
+              <svg
+                x-show="openFaq !== 1"
+                class="w-5 h-5 text-indigo-700"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path d="M12 6v12m6-6H6" />
+              </svg>
+              <svg
+                x-show="openFaq === 1"
+                class="w-5 h-5 text-indigo-700"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path d="M18 12H6" />
+              </svg>
+            </button>
+            <div x-show="openFaq === 1" class="px-6 pb-6 text-gray-600">
+              Nope! This course is designed for complete beginners. We'll guide
+              you step by step through everything you need to know.
+            </div>
+          </div>
+
+          <!-- FAQ Item 2 -->
+          <div class="bg-white rounded-lg shadow">
+            <button
+              @click="openFaq === 2 ? openFaq = null : openFaq = 2"
+              class="w-full text-left px-6 py-4 flex justify-between items-center"
+            >
+              <span class="text-indigo-700 font-semibold"
+                >How long do I have access to the course?</span
+              >
+              <svg
+                x-show="openFaq !== 2"
+                class="w-5 h-5 text-indigo-700"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path d="M12 6v12m6-6H6" />
+              </svg>
+              <svg
+                x-show="openFaq === 2"
+                class="w-5 h-5 text-indigo-700"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path d="M18 12H6" />
+              </svg>
+            </button>
+            <div x-show="openFaq === 2" class="px-6 pb-6 text-gray-600">
+              You'll get access for 8 weeks by default. If you choose the
+              Premium Plan, you’ll get lifetime access.
+            </div>
+          </div>
+
+          <!-- FAQ Item 3 -->
+          <div class="bg-white rounded-lg shadow">
+            <button
+              @click="openFaq === 3 ? openFaq = null : openFaq = 3"
+              class="w-full text-left px-6 py-4 flex justify-between items-center"
+            >
+              <span class="text-indigo-700 font-semibold"
+                >Is there a certificate after completing the course?</span
+              >
+              <svg
+                x-show="openFaq !== 3"
+                class="w-5 h-5 text-indigo-700"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path d="M12 6v12m6-6H6" />
+              </svg>
+              <svg
+                x-show="openFaq === 3"
+                class="w-5 h-5 text-indigo-700"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path d="M18 12H6" />
+              </svg>
+            </button>
+            <div x-show="openFaq === 3" class="px-6 pb-6 text-gray-600">
+              Yes! Students who complete the course will receive a personalized
+              Certificate of Completion.
+            </div>
+          </div>
+
+          <!-- FAQ Item 4 -->
+          <div class="bg-white rounded-lg shadow">
+            <button
+              @click="openFaq === 4 ? openFaq = null : openFaq = 4"
+              class="w-full text-left px-6 py-4 flex justify-between items-center"
+            >
+              <span class="text-indigo-700 font-semibold"
+                >What if I have questions during the course?</span
+              >
+              <svg
+                x-show="openFaq !== 4"
+                class="w-5 h-5 text-indigo-700"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path d="M12 6v12m6-6H6" />
+              </svg>
+              <svg
+                x-show="openFaq === 4"
+                class="w-5 h-5 text-indigo-700"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path d="M18 12H6" />
+              </svg>
+            </button>
+            <div x-show="openFaq === 4" class="px-6 pb-6 text-gray-600">
+              We offer community support for Basic users and 1-on-1 mentoring
+              for Pro and Premium users.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer
+      data-aos="fade-in"
+      class="bg-gray-900 text-gray-300 py-16 px-6 md:px-16"
+    >
+      <div class="max-w-6xl mx-auto grid md:grid-cols-4 gap-12">
+        <!-- Logo & Description -->
+        <div>
+          <h2 class="text-2xl font-bold text-white mb-4">CodeMaster</h2>
+          <p class="text-gray-400 text-sm leading-relaxed">
+            Master web development from scratch with our expert-led online
+            bootcamp. Build real projects and become job-ready in just 8 weeks.
+          </p>
+        </div>
+
+        <!-- Courses -->
+        <div>
+          <h3 class="text-white font-semibold mb-4">Courses</h3>
+          <ul class="space-y-2 text-sm">
+            <li>
+              <a href="#" class="hover:text-white transition"
+                >Front-End Development</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:text-white transition"
+                >JavaScript Mastery</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:text-white transition"
+                >Responsive Design</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Company -->
+        <div>
+          <h3 class="text-white font-semibold mb-4">Company</h3>
+          <ul class="space-y-2 text-sm">
+            <li>
+              <a href="#" class="hover:text-white transition">About Us</a>
+            </li>
+            <li><a href="#" class="hover:text-white transition">Contact</a></li>
+            <li>
+              <a href="#" class="hover:text-white transition">Privacy Policy</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Social Media -->
+        <div>
+          <h3 class="text-white font-semibold mb-4">Follow Us</h3>
+          <div class="flex space-x-4">
+            <a href="#" class="hover:text-white transition text-xl"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a href="#" class="hover:text-white transition text-xl"
+              ><i class="fab fa-youtube"></i
+            ></a>
+            <a href="#" class="hover:text-white transition text-xl"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <a href="#" class="hover:text-white transition text-xl"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom -->
+      <div
+        class="mt-12 text-center text-sm text-gray-500 border-t border-gray-800 pt-6"
+      >
+        &copy; 2025 CodeMaster. All rights reserved.
+      </div>
+    </footer>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
+      defer
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
